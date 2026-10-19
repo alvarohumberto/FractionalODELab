@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fractional-ode-lab"
+version = "0.1.0"
+description = "Solvers for Caputo fractional ODEs: PECE, Lubich convolution quadrature, variable order, Strong-FDM residual"
+authors = [{name = "Alvaro H. Salas", email = "ahsalass@unal.edu.co"}]
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = ["numpy", "scipy"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
